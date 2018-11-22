@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1542724546 source:/home/tonyg/Desktop/C++/linkedl list/main.cpp
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+
+1542882448 source:/home/tonyg/Desktop/Linked-List/main.cpp
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+
