@@ -13,20 +13,19 @@ void Reverse(struct lol **head_ref){
     struct lol *temp=*head_ref;
     /// counting the length
     for(length=0;temp!=NULL;temp=temp->next,length++);
-    cout<<"log 1: length is "<<length<<endl;
 
     while(done<length)
 {
-            cout<<"log 2: Entered in while loop, done is :"<<done<<" and length is :"<<length<<endl;
+
             for(i=0,temp=*head_ref;i<done;i++,temp=temp->next); /// moving pointer until done(items which are swapped from front
-            cout<<"Log 3: element from front is :"<<temp->element<<endl;
+
             for(int j=0;j<length-1;j++,temp1=temp1->next); /// moving pointer until length(items which are swapped from back
-            cout<<"LOg 4: Element form back is :"<<temp1->element<<endl;
+
 
             int tempo=temp->element;
             temp->element=temp1->element;
             temp1->element=tempo;
-            cout<<"swapped element "<<temp1->element<<" and "<<temp->element<<endl;
+
             done++;
             length--;
             temp=*head_ref;
@@ -335,6 +334,7 @@ int main()
 
                 // shit goes here;
                 Reverse(&head);
+                cout<<"Reversed List is :"<<endl;
                 print(head);
                 break;
         case 11:
